@@ -1,0 +1,25 @@
+// レスポンシブ対応
+$pc: 1200px; //PC
+$tab: 770px;
+$sp-up: 601px;
+$sp: 600x; //sp
+@mixin pc {
+  @media (max-width:($pc)){
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width:($tab)){
+    @content;
+  }
+};
+@mixin sp-up {
+  @media (max-width:($sp-up)){
+    @content;
+  }
+};
+@mixin sp {
+  @media (max-width:($sp)){
+    @content;
+  }
+}

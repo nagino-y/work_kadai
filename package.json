@@ -1,0 +1,29 @@
+{
+  "name": "jissen_work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gulp-changed": "^4.0.3",
+    "gulp-imagemin": "^8.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  }
+}

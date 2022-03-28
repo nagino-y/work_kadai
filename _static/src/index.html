@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>はじめてのGulp</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <img src="image/header_logo.svg" class="header_logo">
+      <div class="header-inner">
+        <ul class="header__menu">
+          <li class="header__menu--item"><a href="#service">ABCの強み</a></li>
+          <li class="header__menu--item"><a href="#merit">プログラミングを学ぶメリット</a></li>
+          <li class="header__menu--item"><a href="#plan">プラン紹介</a></li>
+          <li class="header__menu--item"><a href="#review">お客様の声</a></li>
+          <li class="header__menu--item"><a href="#request">Q＆A</a></li>
+          <a class="header__btn" href="#request">無料相談お申し込みはこちら</a>
+        </ul>
+        <button class="hamburger">
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <ul class="hamburger-inner">
+    <li><a href="#service">ABCの強み</a></li>
+    <li><a href="#merit">プログラミングを学ぶメリット</a></li>
+    <li><a href="#plan">プラン紹介</a></li>
+    <li><a href="#review">お客様の声</a></li>
+    <li><a href="#request">よくあるご質問</a></li>
+  </ul>
+  <main>
+    <div class="top-section">
+      <div class="top-wrapper">
+        <h2>完全未経験でも大丈夫！</h2>
+        <h1>オンライン完結型スクールで<br>WEB系の副業を始めよう！</h1>
+        <a class="top-wrapper__btn" href="#request">無料相談・お申し込みはこちら</a>
+        <p>年齢性別は問いません！会社員をしながらでも始められます。<br>専業主婦のスクール生の方も多数参加しています。</p>
+      </div>
+      <div class="top-image">
+        <img src="image/top_img.jpg" class="top-image__pc">
+        <img src="image/top_img-sp.jpg" class="top-image__sp">
+      </div>
+    </div>
+    <div class="intro-section">
+      <h2>こんなお悩みはありませんか？</h2>
+      <p>副業を始めたいけど、右も左も分からない。</p>
+      <hr>
+      <p>会社に行きながらリモートで稼ぐことに憧れがある</p>
+      <hr>
+      <p>まず月5万くらいを最短で稼げるようにりたい！</p>
+      <hr>
+      <h1>プログラミングを学び、<br>最短で稼げるWEB系フリーランスになろう！</h1>
+    </div>
+    <div class="service-section" id="service">
+      <h1>ABCプログラミングスクールでは</h1>
+      <h1>あなたの学習を二人三脚で徹底サポート</h1>
+      <div class="service-wrapper">
+        <div class="service-wrapper__image">
+          <img src="image/service_img1.jpg">
+        </div>
+        <div class="service-wrapper__text">
+          <h2>サービスの強み1</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+      </div>
+      <div class="service-wrapper">
+        <div class="service-wrapper__image">
+          <img src="image/service_img2.jpg">
+        </div>
+        <div class="service-wrapper__text">
+          <h2>サービスの強み2</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+      </div>
+      <div class="service-wrapper">
+        <div class="service-wrapper__image">
+          <img src="image/service_img3.jpg">
+        </div>
+        <div class="service-wrapper__text">
+          <h2>サービスの強み3</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+      </div>
+        <a href="#request" class="follow-btn fade-in">無<br>料<br>相<br>談<br>受<br>付<br>中<br>！</a>
+    </div>
+    <div class="form-induction">
+      <p>あなたに合ったプランをご提案します！</p>
+      <h2>いつでもお気軽にご相談ください。</h2>
+      <a class="form-induction__btn" href="#request">【無料】相談してみる  ⇀</a>
+    </div>
+    <div class="merit-section" id="merit">
+      <h1 class="merit-section__pc">いま、WEB系の副業を始めるメリット</h1>
+      <h1 class="merit-section__sp">いま、</h1>
+      <h1 class="merit-section__sp">WEB系の副業を始めるメリット</h1>
+      <div class="merit-wrapper">
+        <div class="merit-wrapper__text">
+          <h2>メリット１</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+        <div class="merit-wrapper__icon">
+          <img src="image/merit_illust1.png">
+        </div>
+      </div>
+      <div class="merit-wrapper">
+        <div class="merit-wrapper__text">
+          <h2>メリット2</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+        <div class="merit-wrapper__icon">
+          <img src="image/merit_illust2.png">
+        </div>
+      </div>
+      <div class="merit-wrapper">
+        <div class="merit-wrapper__text">
+          <h2>メリット3</h2>
+          <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        </div>
+        <div class="merit-wrapper__icon">
+          <img src="image/merit_illust3.png">
+        </div>
+      </div>
+    </div>
+    <div class="plan-section" id="plan">
+      <h1>プラン紹介</h1>
+      <div class="plan-wrapper">
+        <div class="plan-inner">
+         <h2>WEB制作コース</h2>
+         <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ</p>
+         <ul class="plan-inner__list">
+           <li class="plan-inner__list--item">✔️　HTML/CSS（マークアップ言語）</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　JavaScript</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　WordPress</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　仕事の取り方</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　収益性アップ・継続性を出す方法</li>
+           <hr>
+         </ul>
+        </div>
+        <div class="plan-inner">
+         <h2>Comming Soon</h2>
+         <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ</p>
+         <ul class="plan-inner__list">
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+         </ul>
+        </div>
+        <div class="plan-inner">
+         <h2>Comming Soon</h2>
+         <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ</p>
+         <ul class="plan-inner__list">
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+           <li class="plan-inner__list--item">✔️　ダミーテキスト</li>
+           <hr>
+         </ul>
+        </div>
+      </div>
+    </div>
+    <div class="form-induction sp-form-induction">
+      <p>あなたに合ったプランをご提案します！</p>
+      <h2>いつでもお気軽にご相談ください。</h2>
+      <a class="form-induction__btn" href="#request">【無料】相談してみる  ⇀</a>
+    </div>
+    <div class="review-section" id="review">
+      <h1>お客様の声</h1>
+      <div class="review-heading">
+        <p>WEB制作コース</p>
+        <p>Comming Soon</p>
+        <p>Comming Soon</p>
+      </div>
+      <div class="review-wrapper">
+        <div class="review-unit">
+          <div class="review-unit__avatar">
+            <img src="image/review_men.png">
+            <p>20代男性</p>
+          </div>
+          <p class="review-unit__text">
+            WEB制作コース。ダミーテキストダミーテキスト。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <p class="review-unit__text--sp">
+            WEB制作コース<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー
+          </p>
+        </div>
+        <div class="review-unit">
+          <div class="review-unit__avatar">
+            <img src="image/review_women.png">
+            <p>20代女性</p>
+          </div>
+          <p class="review-unit__text">
+            WEB制作コース。ダミーテキストダミーテキスト。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <p class="review-unit__text--sp">
+            WEB制作コース<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー
+          </p>
+        </div>
+        <div class="review-unit">
+          <div class="review-unit__avatar">
+            <img src="image/review_men.png">
+            <p>20代男性</p>
+          </div>
+          <p class="review-unit__text">
+            WEB制作コース。ダミーテキストダミーテキスト。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <p class="review-unit__text--sp">
+            WEB制作コース<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー
+          </p>
+        </div>
+        <div class="review-unit">
+          <div class="review-unit__avatar">
+            <img src="image/review_women.png">
+            <p>20代女性</p>
+          </div>
+          <p class="review-unit__text">
+            WEB制作コース。ダミーテキストダミーテキスト。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+          <p class="review-unit__text--sp">
+            WEB制作コース<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="question-section">
+      <h1>よくあるご質問</h1>
+      <div class="question-wrapper">
+        <div class="question-wrapper__text">
+          <h2>Q.</h2>
+          <p class="question-wrapper__text--pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          <p class="question-wrapper__text--sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+        </div>
+        <div class="question-wrapper__icon"><span class="question-wrapper__icon--item"></span></div>
+      </div>
+      <div class="accordion">
+        <p class="accordion-pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        <p class="accordion-sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+      </div>
+      <div class="question-wrapper">
+        <div class="question-wrapper__text">
+          <h2>Q.</h2>
+          <p class="question-wrapper__text--pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          <p class="question-wrapper__text--sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+        </div>
+        <div class="question-wrapper__icon"><span class="question-wrapper__icon--item"></span></div>
+      </div>
+      <div class="accordion">
+        <p class="accordion-pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        <p class="accordion-sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+      </div>
+      <div class="question-wrapper">
+        <div class="question-wrapper__text">
+          <h2>Q.</h2>
+          <p class="question-wrapper__text--pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          <p class="question-wrapper__text--sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+        </div>
+        <div class="question-wrapper__icon"><span class="question-wrapper__icon--item"></span></div>
+      </div>
+      <div class="accordion">
+        <p class="accordion-pc">ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+        <p class="accordion-sp">ダミーテキストダミーテキスト<br>ダミーテキストダミーテキスト</p>
+      </div>
+    </div>
+    <div class="request-section" id="request">
+      <h1 class="request-section__pc">無料相談・お申込みフォーム</h1>
+      <h1 class="request-section__sp">無料相談お申込みフォーム</h1>
+      <div class="request-wrapper">
+        <div class="request-wrapper__text">
+          <h2>30秒でお申し込み完了！ご相談は無料です。</h2>
+          <h3>ご不明な点や気になることを、簡単に相談できます。<br>どうぞお気軽にお話しください！</h3>
+          <p>完全未経験だった僕自身の経験や、フリーランス仲間の経験を踏まえて<br>サポートいたしますので、本気で最短で稼げるようになりたい方にオススメです！<br>あなたの目標に合わせてオリジナルプランを設計し、二人三脚で成長していきましょう。<br>相談したいだけでもOKです！　お気軽にまずはご相談ください。</p>
+        </div>
+        <div class="request-wrapper__form">
+          <table>
+            <tr>
+              <th>お名前*</th>
+              <td class="td-space"><input class="input" type="text" placeholder="姓"></td>
+              <td><input class="input" type="text" placeholder="名"></td>
+            </tr>
+            <tr>
+              <th>お名前（フリガナ）*</th>
+              <td class="td-space"><input class="input" type="text" placeholder="セイ"></td>
+              <td><input class="input" type="text" placeholder="メイ"></td>
+            </tr>
+            <tr>
+              <th>メールアドレス*</th>
+              <td colspan="2"><input class="long-input address" type="text" placeholder="abcprograming@info.jp"></td>
+            </tr>
+            <tr>
+              <th>お申し込み内容*</th>
+              <td colspan="2"><textarea class="long-input textarea" placeholder="こちらにご相談内容・お申込み内容をご記入ください"></textarea></td>
+            </tr>
+          </table>
+          <button class="request-wrapper__form--btn">無料相談に申し込む</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="line-wrapper">
+      <p>LINE＠でも無料相談を受付中！友達追加登録はこちらから</p>
+      <div class="qr-code">QRコード</div>
+    </div>
+    <div class="copyright">Copyright © 2020 , ABCプログラミングスクール</div>
+    <a  class="hold-footer" href="#request">無料相談・お申し込みはこちら</a>
+  </footer>
+</body>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
