@@ -806,6 +806,17 @@ body {
   }
 }
 
+.top-image__pc {
+  width: 64rem;
+}
+@media (max-width: 600x) {
+  .top-image__pc {
+    display: none;
+  }
+}
+.top-image__sp {
+  display: none;
+}
 @media (max-width: 600x) {
   .top-image__sp {
     display: block;
