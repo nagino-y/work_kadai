@@ -3,16 +3,287 @@
 @import './breakpoint';
 
 // ヘッダー
+// .header-wrapper {
+//   margin: 0 auto;
+//   padding: 1rem 3.2rem 1.3rem 8rem;
+//   height: 8rem;
+//   max-width: 1400px;
+//   display: flex;
+//   justify-content: space-between;
+//   box-sizing: border-box;
+//   @include sp{
+//     background-color: #99CCFF;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     align-items: center;
+//     z-index: 10;
+//     height: 3.5rem;
+//     padding: 0.4rem 1.65rem 0.5rem 2.7rem;
+//   }
+// }
+// .header-inner {
+//   width: 83.5rem;
+//   @include tab{
+//     width: 120rem;
+//   }
+//   @include sp-up{
+//     width: 120rem;
+//   }
+//   @include sp{
+//     display: flex;
+//     flex-direction: row-reverse;
+//   }
+// }
+// .header {
+//   height: 8rem;
+//   background-color: #BAD3FF;
+//   @include sp{
+//     height: 3.5rem;
+//   }
+//   &__menu {
+//     padding-left: 0;
+//     margin: 0;
+//     height: 5.5rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     @include sp{
+//       height: 3.5rem;
+//       display: none;
+//     }
+//     &__item {
+//       color: #FFFFFF;
+//       list-style: none;
+//       font-size: 1.5rem;
+//       a {
+//         color: #FFFFFF;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+//   &__btn {
+//     color: #FFFFFF;
+//     background-color: #FF0000;
+//     font-size: 1.6rem;
+//     width: 23.4rem;
+//     height: 4.3rem;
+//     text-decoration: none;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     box-shadow: none;
+//     border-radius:1.4rem;
+//     @include tab{
+//       width: 30rem;
+//     }
+//     @include sp-up{
+//       width: 30rem;
+//     }
+//     &:hover {
+//       cursor: pointer;
+//       box-shadow: 0 0.8rem 0.5rem 0 #000000;
+//       top: -0.4rem;
+//     }
+//     &:active {
+//       top: 0.4rem;
+//       box-shadow: none;
+//     }
+//   }
+// }
+// .header_logo {
+//   width: 13.3rem;
+//   height: 5.7rem;
+//   @include sp{
+//     width: 6.4rem;
+//     height: 2.6rem;
+//   }
+// }
+// // ハンバーガーメニュー
+// .hamburger-inner {
+//   @include sp-up{
+//     display: none;
+//   }
+//   @include sp{
+//     width: 100%;
+//     height: 85vh;
+//     display: flex;
+//     flex-direction: column;
+//     list-style: none;
+//     background-color: rgba(180, 216, 248, 0.7);
+//     margin: 0;
+//     font-size: 1.8rem;
+//     transition: 0.3s;
+//     position: fixed;
+//     right: -105%;
+//     z-index: 20;
+//     padding-left: 0;
+//     li {
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-weight: bold;
+//     }
+//     a {
+//       text-decoration: none;
+//       color: #0033FF;
+//       &:hover {
+//         color: #FF3300;
+//         cursor: pointer;
+//       }
+//     }
+//     &.open {
+//       right: 0;
+//     }
+//   }
+// }
+// .hamburger {
+//   @include sp-up{
+//     display: none;
+//   }
+//   @include sp{
+//     display: block;
+//     height: 1.4rem;
+//     width: 2.4rem;
+//     background-color: #BAD3FF;
+//     border: none;
+//     padding: 0;
+//     cursor: pointer;
+//     &__line {
+//       display: block;
+//       position: relative;
+//       width: 100%;
+//       height: 0.2rem;
+//       background-color: #FFF;
+//       transition: 0.2s;
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: #FFF;
+//         transition: 0.5s;
+//         transform: translateY(-0.7rem);
+//       }
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: #FFF;
+//         transition: 0.5s;
+//         transform: translateY(0.7rem);
+//       }
+//       &.open {
+//         background-color: transparent;
+//         &:before {
+//           content: "";
+//           transition: 0.2s;
+//           transform: rotate(45deg);
+//         }
+//         &:after {
+//           content: "";
+//           transition: 0.2s;
+//           transform: rotate(-45deg);
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+header {
+  background-color: rgba(23, 118, 210, 0.6);
+  height: 8rem;
+}
 .header-wrapper {
-  margin: 0 auto;
-  padding: 1rem 3.2rem 1.3rem 8rem;
   height: 8rem;
   max-width: 1400px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem 3.2rem 1.3rem 8rem;
   box-sizing: border-box;
-  @include sp{
-    background-color: #99CCFF;
+}
+.header-inner {
+  width: 83.5rem;
+  @include tab{
+    
+  }
+}
+.header {
+  &__menu {
+    height: 5.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    &--item {
+      list-style: none;
+      color: #FFFFFF;
+      font-size: 1.4rem;
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255);
+      }
+    }
+  }
+  &__btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    background-color: rgba(239, 83, 80);
+    width: 23.4rem;
+    height: 4.3rem;
+    box-shadow: none;
+    border-radius:1.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      box-shadow: 0 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+      top: -0.4rem;
+      cursor: pointer;
+    }
+    &:active {
+      top: 0.4rem;
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 770px) {
+  .header-inner {
+    width: 120rem;
+  }
+  .header__btn {
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .hamburger-inner {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+} 
+
+// ハンバーガーメニュー切り替え
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 3.5rem;
+  }
+  .header-wrapper {
+    background-color: rgb(115, 172, 228);
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,91 +292,11 @@
     height: 3.5rem;
     padding: 0.4rem 1.65rem 0.5rem 2.7rem;
   }
-}
-.header-inner {
-  width: 83.5rem;
-  @include tab{
-    width: 120rem;
-  }
-  @include sp-up{
-    width: 120rem;
-  }
-  @include sp{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-.header {
-  height: 8rem;
-  background-color: #BAD3FF;
-  @include sp{
+  .header__menu {
     height: 3.5rem;
-  }
-  &__menu {
-    padding-left: 0;
-    margin: 0;
-    height: 5.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include sp{
-      height: 3.5rem;
-      display: none;
-    }
-    &__item {
-      color: #FFFFFF;
-      list-style: none;
-      font-size: 1.5rem;
-      a {
-        color: #FFFFFF;
-        text-decoration: none;
-      }
-    }
-  }
-  &__btn {
-    color: #FFFFFF;
-    background-color: #FF0000;
-    font-size: 1.6rem;
-    width: 23.4rem;
-    height: 4.3rem;
-    text-decoration: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
-    border-radius:1.4rem;
-    @include tab{
-      width: 30rem;
-    }
-    @include sp-up{
-      width: 30rem;
-    }
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0 0.8rem 0.5rem 0 #000000;
-      top: -0.4rem;
-    }
-    &:active {
-      top: 0.4rem;
-      box-shadow: none;
-    }
-  }
-}
-.header_logo {
-  width: 13.3rem;
-  height: 5.7rem;
-  @include sp{
-    width: 6.4rem;
-    height: 2.6rem;
-  }
-}
-// ハンバーガーメニュー
-.hamburger-inner {
-  @include sp-up{
     display: none;
   }
-  @include sp{
+  .hamburger-inner {
     width: 100%;
     height: 85vh;
     display: flex;
@@ -129,9 +320,9 @@
     }
     a {
       text-decoration: none;
-      color: #0033FF;
+      color: rgba(0, 134, 252);
       &:hover {
-        color: #FF3300;
+        color: rgba(232, 102, 59);
         cursor: pointer;
       }
     }
@@ -139,16 +330,15 @@
       right: 0;
     }
   }
-}
-.hamburger {
-  @include sp-up{
-    display: none;
+  .header-inner {
+    display: flex;
+    flex-direction: row-reverse;
   }
-  @include sp{
+  .hamburger {
     display: block;
     height: 1.4rem;
     width: 2.4rem;
-    background-color: #BAD3FF;
+    background-color: rgb(115, 172, 228);
     border: none;
     padding: 0;
     cursor: pointer;
@@ -157,7 +347,7 @@
       position: relative;
       width: 100%;
       height: 0.2rem;
-      background-color: #FFF;
+      background-color: rgba(255, 255, 255);
       transition: 0.2s;
       &:before {
         content: "";
@@ -165,7 +355,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #FFF;
+        background-color: rgba(255, 255, 255);
         transition: 0.5s;
         transform: translateY(-0.7rem);
       }
@@ -175,7 +365,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #FFF;
+        background-color: rgba(255, 255, 255);
         transition: 0.5s;
         transform: translateY(0.7rem);
       }
@@ -195,3 +385,10 @@
     }
   }
 }
+
+
+.header_logo {
+  width: 13.3rem;
+  height: 5.7rem;
+}
+
