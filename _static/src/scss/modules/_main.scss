@@ -361,9 +361,16 @@
 .top-image {
   &__pc {
     width: 64rem;
+    @include sp{
+      display: none;
+    }
   }
   &__sp {
     display: none;
+    @include sp{
+      display: block;
+      width: 100%;
+    }
   }
 }
 

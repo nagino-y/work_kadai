@@ -4,22 +4,22 @@ $tab: 770px;
 $sp-up: 601px;
 $sp: 600x; //sp
 @mixin pc {
-  @media (max-width:($pc)){
+  @media screen and (max-width:($pc)){
     @content;
   }
 }
 @mixin tab {
-  @media (max-width:($tab)){
+  @media screen and (max-width:($tab)){
     @content;
   }
 };
 @mixin sp-up {
-  @media (max-width:($sp-up)){
+  @media screen and (max-width:($sp-up)){
     @content;
   }
 };
 @mixin sp {
-  @media (max-width:($sp)){
+  @media screen and (max-width:($sp)){
     @content;
   }
 }
