@@ -2,7 +2,9 @@
 $pc: 1200px; //PC
 $tab: 770px;
 $sp-up: 601px;
-$sp: 600x; //sp
+$sp: 600px; //sp
+// min
+$sp-min: 601px;
 @mixin pc {
   @media screen and (max-width:($pc)){
     @content;
@@ -20,6 +22,11 @@ $sp: 600x; //sp
 };
 @mixin sp {
   @media screen and (max-width:($sp)){
+    @content;
+  }
+}
+@mixin sp-min{
+  @media screen and (min-width:($sp-min)){
     @content;
   }
 }
