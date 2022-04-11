@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -777,24 +778,50 @@ body {
   align-items: center;
   padding-top: 11.9rem;
 }
+@media screen and (max-width: 600px) {
+  .intro-section {
+    padding-top: 6.9rem;
+  }
+}
 .intro-section h2 {
   font-size: 2.4rem;
   font-weight: normal;
   background: linear-gradient(transparent 65%, rgba(25, 118, 210, 0.35) 0%);
   margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .intro-section h2 {
+    font-size: 2.1rem;
+  }
+}
 .intro-section p {
   font-size: 1.6rem;
   margin: 2.1rem 0 1.9rem 0;
 }
+@media screen and (max-width: 600px) {
+  .intro-section p {
+    font-size: 1.4rem;
+    margin: 1.8rem 0 1.7rem 0;
+  }
+}
 .intro-section p:first-of-type {
   margin-top: 9rem;
+}
+@media screen and (max-width: 600px) {
+  .intro-section p:first-of-type {
+    margin-top: 3.2rem;
+  }
 }
 .intro-section hr {
   width: 57.2rem;
   border: none;
   border-bottom: solid 1px rgb(25, 118, 210);
   margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .intro-section hr {
+    width: 34.5rem;
+  }
 }
 .intro-section h1 {
   width: 100vw;
@@ -804,8 +831,216 @@ body {
   font-weight: normal;
   margin-top: 11.3rem;
   margin-bottom: 0;
-  background: linear-gradient(to right, #62B5FE, #DEEEFC);
+  background: linear-gradient(to right, rgb(115, 172, 228), #DEEEFC);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .intro-section h1 {
+    height: 9rem;
+    margin-top: 5.6rem;
+    line-height: 3.1rem;
+    font-size: 1.7rem;
+  }
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12.1rem 0 16.8rem 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .service-section {
+    align-items: flex-start;
+    max-width: 37.5rem;
+    padding: 6.3rem 1.5rem 5.6rem 1.5rem;
+  }
+}
+.service-section h1 {
+  text-align: center;
+  font-size: 5.6rem;
+  font-weight: normal;
+  background: linear-gradient(transparent 60%, rgba(252, 143, 0, 0.35) 0);
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .service-section h1 {
+    font-size: 0;
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+.service-section h1:nth-of-type(2) {
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 600px) {
+  .service-section h1:first-of-type {
+    background: linear-gradient(transparent 70%, rgba(252, 143, 0, 0.35) 0);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-section h1:last-of-type {
+    background: linear-gradient(transparent 70%, rgba(252, 143, 0, 0.35) 0);
+    padding-bottom: 0.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-section h1:first-of-type:before {
+    content: "ABCプログラミングスクールでは";
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-section h1:last-of-type:before {
+    content: "あなたの学習を徹底サポート";
+    font-size: 2.1rem;
+  }
+}
+
+.service-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 110.5rem;
+  margin-top: 4.8rem;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5.8rem;
+  }
+}
+.service-wrapper img {
+  width: 47.4rem;
+  height: 28rem;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper img {
+    width: 34.5rem;
+    height: 18.9rem;
+  }
+}
+.service-wrapper:first-of-type {
+  margin-top: 6.4rem;
+}
+.service-wrapper:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper:nth-of-type(2) {
+    flex-direction: column;
+  }
+}
+.service-wrapper__text {
+  width: 55.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper__text {
+    width: 34.5rem;
+    margin-top: 4.2rem;
+  }
+}
+.service-wrapper__text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.6rem;
+  margin-top: 0;
+  font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper__text h2 {
+    font-size: 2.1rem;
+  }
+}
+.service-wrapper__text p {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .service-wrapper__text p {
+    font-size: 0;
+    line-height: 2.8rem;
+    margin-top: 1.8rem;
+  }
+  .service-wrapper__text p:before {
+    content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト";
+    font-size: 1.4rem;
+  }
+}
+
+.form-induction {
+  height: 28rem;
+  background: linear-gradient(to right, #62B5FE, #DEEEFC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .form-induction {
+    height: 19.1rem;
+  }
+}
+.form-induction p {
+  font-size: 1.6rem;
+  margin: 5.6rem 0 3.1rem 0;
+}
+@media screen and (max-width: 600px) {
+  .form-induction p {
+    font-size: 1rem;
+    margin: 3.1rem 0 2rem 0;
+  }
+}
+.form-induction h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+  .form-induction h2 {
+    margin-bottom: 1.8rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-induction a {
+    width: 34.6rem;
+    height: 7rem;
+    font-size: 2.1rem;
+    border-radius: 1.4rem;
+  }
+}
+.form-induction__btn {
+  width: 48rem;
+  height: 8rem;
+  font-size: 2.4rem;
+  background-color: rgb(239, 83, 80);
+  color: #FFFFFF;
+  border-radius: 1.4rem;
+  border: none;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-induction__btn:hover {
+  box-shadow: 0 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+  top: -0.4rem;
+  cursor: pointer;
+}
+.form-induction__btn:active {
+  top: 0.4rem;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

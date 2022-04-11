@@ -3,8 +3,7 @@ $pc: 1200px; //PC
 $tab: 770px;
 $sp-up: 601px;
 $sp: 600px; //sp
-// min
-$sp-min: 601px;
+$sp-min: 601px;// min
 @mixin pc {
   @media screen and (max-width:($pc)){
     @content;

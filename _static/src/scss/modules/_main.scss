@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import './base';
 @import './breakpoint';
-// 追従ボタン
 
+// 追従ボタン
 .follow-btn {
   display: block;
   width: 7.5rem;
@@ -51,7 +51,6 @@
 }
 
 // トップページ
-
 .top-section {
   max-width: 1440px;
   margin: 0 auto;
@@ -151,23 +150,35 @@
 }
 
 // イントロページ
-
 .intro-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 11.9rem;
+  @include sp{
+    padding-top:6.9rem;
+  }
   h2 {
     font-size: 2.4rem;
     font-weight: normal;
     background: linear-gradient(transparent 65%, rgba(25, 118, 210, 0.35) 0%);
     margin: 0;
+    @include sp{
+      font-size: 2.1rem;
+    }
     }
   p {
     font-size: 1.6rem;
     margin: 2.1rem 0 1.9rem 0;
+    @include sp{
+      font-size: 1.4rem;
+      margin: 1.8rem 0 1.7rem 0;
+    }
     &:first-of-type {
       margin-top: 9rem;
+      @include sp{
+        margin-top: 3.2rem;
+      }
     }
   }
   hr {
@@ -175,6 +186,9 @@
     border: none;
     border-bottom: solid 1px rgba(25, 118, 210);
     margin: 0;
+    @include sp{
+      width: 34.5rem;
+    }
   }
   h1 {
     width: 100vw;
@@ -184,9 +198,193 @@
     font-weight: normal;
     margin-top: 11.3rem;
     margin-bottom: 0;
-    background: linear-gradient(to right, #62B5FE, #DEEEFC);
+    background: linear-gradient(to right, rgb(115, 172, 228), #DEEEFC);
     display: flex;
     align-items: center; 
     justify-content: center;
+    @include sp{
+      height: 9rem;
+      margin-top: 5.6rem;
+      line-height: 3.1rem;
+      font-size: 1.7rem;
+    }
   }
 }
+
+// サービスページ
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12.1rem 0 16.8rem 0;
+  box-sizing: border-box;
+  @include sp{
+    align-items: flex-start;
+    max-width: 37.5rem;
+    padding: 6.3rem 1.5rem 5.6rem 1.5rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: normal;
+    background: linear-gradient(transparent 60%, rgba(252, 143, 0, 0.35) 0);
+    margin: 0;
+    @include sp{
+      font-size: 0;
+      text-align: left;    
+      margin-left: 1rem;
+    }
+    &:nth-of-type(2) {
+      margin-top: 0.4rem;
+    }
+    &:first-of-type {
+      @include sp{
+        background: linear-gradient(transparent 70%, rgba(252, 143, 0, 0.35) 0);
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
+      }
+    }
+    &:last-of-type {
+      @include sp{
+        background: linear-gradient(transparent 70%, rgba(252, 143, 0, 0.35) 0);
+        padding-bottom: 0.3rem;
+      }
+    }
+    &:first-of-type:before {
+      @include sp{
+        content: "ABCプログラミングスクールでは";
+        font-size: 2.1rem;
+      }
+    }
+    &:last-of-type:before {
+      @include sp{
+        content: "あなたの学習を徹底サポート";
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
+.service-wrapper {
+  display:flex;
+  justify-content: space-between;
+  width: 110.5rem;
+  margin-top: 4.8rem;
+  @include sp{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5.8rem;
+  }
+  img {
+    width: 47.4rem;
+    height: 28rem;
+    @include sp{
+      width: 34.5rem;
+      height: 18.9rem;
+    }
+  }
+  &:first-of-type {
+    margin-top: 6.4rem
+  }
+  &:nth-of-type(2) {
+    flex-direction: row-reverse;
+    @include sp{
+      flex-direction: column;
+    }
+  }
+  &__text {
+    width: 55.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include sp{
+      width: 34.5rem;
+      margin-top: 4.2rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2.6rem;
+      margin-top: 0;
+      font-weight: normal;
+      @include sp{
+        font-size: 2.1rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      margin: 0;
+      @include sp{
+        font-size: 0;
+        line-height: 2.8rem;
+        margin-top: 1.8rem;
+        &:before {
+          content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト";
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.form-induction {
+  height: 28rem;
+  background: linear-gradient(to right, #62B5FE, #DEEEFC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include sp{
+    height: 19.1rem;
+  }
+  p {
+    font-size: 1.6rem;
+    margin: 5.6rem 0 3.1rem 0;
+    @include sp{
+      font-size: 1rem;
+      margin: 3.1rem 0 2rem 0;
+    }
+  }
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+    font-weight: normal;
+    margin-top: 0;
+    @include sp{
+      margin-bottom: 1.8rem;
+      font-size: 1.4rem;
+    }
+  }
+  a {
+    @include sp{
+      width: 34.6rem;
+      height: 7rem;
+      font-size: 2.1rem;
+      border-radius: 1.4rem;
+    }
+  }
+  &__btn {
+    width: 48rem;
+    height: 8rem;
+    font-size: 2.4rem;
+    background-color: rgba(239, 83, 80);
+    color: #FFFFFF;
+    border-radius: 1.4rem;
+    border: none;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      box-shadow: 0 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+      top: -0.4rem;
+      cursor: pointer;
+    }
+    &:active {
+      top: 0.4rem;
+      box-shadow: none;
+    }
+  }
+}
+
