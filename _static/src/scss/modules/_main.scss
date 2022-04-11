@@ -1,260 +1,6 @@
 @charset "UTF-8";
 @import './base';
 @import './breakpoint';
-
-// 追従ボタン
-
-// .follow-btn {
-//   display: block;
-//   width: 7.5rem;
-//   height: 21.6rem;
-//   background-color: rgba(239, 83, 80);
-//   color: rgba(255, 255, 255);
-//   border: none;
-//   font-size: 2rem;
-//   border-radius: 1.2rem 0 0 1.2rem;
-//   transition: all 0.5s;
-//   text-decoration: none;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: relative;
-//   &:hover {
-//     border: solid 1px rgba(239, 83, 80);
-//     background-color: rgba(255, 255, 255);
-//     color: rgba(239, 83, 80,);
-//     &::before {
-//       position: absolute;
-//       content: "";
-//       border-radius: 1.2rem 0 0 1.2rem;
-//       top: 0.6rem;
-//       bottom: 0.6rem;
-//       left: 0.6rem;
-//       right: 0.6rem;
-//       border: solid 1px rgba(239, 83, 80); 
-//       background-color: rgba(255, 255, 255);
-//       z-index: -1;
-//     }
-//   }
-//   @include sp{
-//     display: none;
-//   }
-// }
-// .fade-in {
-//   opacity: 0;
-//   transition: all 0.5s;
-// }
-// .scroll-in {
-//   opacity: 1;
-//   position: fixed;
-//   bottom: 15.972vh;
-//   right: 0px;
-// }
-
-// // トップページ
-// @include sp{
-//   .top-section {
-//     flex-direction: column-reverse;
-//   }
-//   .top-wrapper {
-//     padding-top: 3.5rem;
-//     padding-left: 0;
-//     width: 37.5rem;
-//     align-items: center;
-//     h2 {
-//       font-size: 2.1rem;
-//       margin-bottom: 2.1rem;
-//     }
-//     h1 {
-//       font-size: 2.5rem;
-//       line-height: 3.9rem;
-//       margin-bottom: 1.8rem;
-//       text-align: center;
-//     }
-//     &__btn {
-//       width: 34.5rem;
-//       height: 5.3rem;
-//       font-size: 1.9rem;
-//       border-radius: 1.4rem;
-//       margin-bottom: 1.7rem;
-//     }
-//     p {
-//       font-size: 1rem;
-//       line-height: 1.4rem;
-//     }
-//   }
-// }
-
-// .top-section {
-//   max-width: 1440px;
-//   margin: 0 auto;
-//   display: flex;
-//   justify-content: space-between;
-//   @include sp{
-//     flex-direction: column-reverse;
-//   }
-// }
-// .top-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   margin: 0 auto;
-//   @include sp{
-//     padding-top: 3.5rem;
-//     padding-left: 0;
-//     width: 37.5rem;
-//     align-items: center;
-//   }
-//   h2 {
-//     font-size: 3.2rem;
-//     margin-bottom: 1.6rem;
-//     margin-top: 0;
-//     font-weight: normal;
-//     @include sp{
-//       font-size: 2.1rem;
-//       margin-bottom: 2.1rem;
-//     }
-//   }
-//   h1 {
-//     font-size: 4rem;
-//     margin-bottom: 2.7rem;
-//     font-weight: normal;
-//     line-height: 5.6rem;
-//     @include sp {
-//       font-size: 2.5rem;
-//       line-height: 3.9rem;
-//       margin-bottom: 1.8rem;
-//       text-align: center;
-//     }
-//   }
-//   &__btn {
-//     width: 48rem;
-//     height: 11.2rem;
-//     background-color: rgba(239, 83, 80);
-//     text-decoration: none;
-//     color: #FFFFFF;
-//     font-size: 2.4rem;
-//     border-radius: 2rem;
-//     margin-bottom: 3.7rem;
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     @include sp{
-//       width: 34.5rem;
-//       height: 5.3rem;
-//       font-size: 1.9rem;
-//       border-radius: 1.4rem;
-//       margin-bottom: 1.7rem;
-//     }
-//     &:hover {
-//       top: -0.4rem;
-//       box-shadow: 0 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.5);
-//       cursor: pointer;
-//     }
-//     &:active {
-//       top: 0.4rem;
-//       box-shadow: none;
-//     }
-//   }
-//   p {
-//     font-size: 1.6rem;
-//     line-height: 3.2rem;
-//     margin: 0;
-//     @include sp{
-//       font-size: 1rem;
-//       line-height: 1.4rem;
-//     }
-//   }
-// }
-// .top-image {
-//   &__pc {
-//     width: 64rem;
-//     @include sp{
-//       display: none;
-//     }
-//   }
-//   &__sp {
-//     display: none;
-//     @include sp{
-//       display: block;
-//       width: 100%;
-//     }
-//   }
-// }
-// .service-wrapper {
-//   img {
-//     width: 47.4rem;
-//     height: 28rem;
-//     @include sp{
-//       width: 34.5rem;
-//       height: 18.9rem;
-//     }
-//   }
-// }
-// .merit-wrapper {
-//   img {
-//     width: 39.2rem;
-//     height: 17.6rem;
-//     @include sp{
-//       width: 34.5rem;
-//       height: 17.5rem;
-//     }
-//   }
-// }
-// .review-unit__avatar {
-//   img {
-//     width: 8rem;
-//     height: 10rem;
-//     @include sp{
-//       width: 6.5rem;
-//       height: 8rem;
-//       margin: 0;
-//     }
-//   }
-// }
-
-// // こんなお悩みはありませんか？ページ　second
-
-// .second-section {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-top: 12rem;
-//   h2 {
-//     font-size: 2.5rem;
-//     font-weight: normal;
-//     background: linear-gradient(transparent 70%,rgba(25, 115, 200, 0.5) 0%);
-//     margin: 0;
-//     }
-//   p {
-//     font-size: 1.5rem;
-//     margin: 2.0rem 0 2.0rem 0;
-//     &:first-of-type {
-//       margin-top: 9rem;
-//     }
-//   }
-//   hr {
-//     width: 57rem;
-//     border: none;
-//     border-bottom: solid 1px rgba(25, 118, 210);
-//     margin: 0;
-//   }
-//   h1 {
-//     width: 100vw;
-//     height: 23rem;
-//     font-size: 5rem;
-//     line-height: 6rem;
-//     font-weight: normal;
-//     margin-top: 11rem;
-//     margin-bottom: 0;
-//     background:linear-gradient(to right, #2c7cff, #D9E5FF);
-//     display: flex;
-//     align-items: center; 
-//     justify-content: center;
-//   }
-// }
-
 // 追従ボタン
 
 .follow-btn {
@@ -311,23 +57,42 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  @include sp{
+    flex-direction: column-reverse;
+  }
 }
 .top-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  @include sp{
+    padding-top: 3.5rem;
+    padding-left: 0;
+    width: 37.5rem;
+    align-items: center;
+  }
   h2 {
     font-size: 3.2rem;
     margin-bottom: 1.6rem;
     margin-top: 0;
     font-weight: normal;
+    @include sp{
+      font-size: 2.1rem;
+      margin-bottom: 2.1rem;
+    }
   }
   h1 {
     font-size: 4rem;
     margin-bottom: 2.7rem;
     font-weight: normal;
     line-height: 5.6rem;
+    @include sp{
+      font-size: 2.5rem;
+      line-height: 3.9rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
     }
   &__btn {
     width: 48rem;
@@ -342,6 +107,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sp{
+      width: 34.5rem;
+      height: 5.3rem;
+      font-size: 1.9rem;
+      border-radius: 1.4rem;
+      margin-bottom: 1.7rem;
+    }
     &:hover {
       top: -0.4rem;
       box-shadow: 0 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.5);
@@ -356,6 +128,10 @@
     font-size: 1.6rem;
     line-height: 3.2rem;
     margin: 0;
+    @include sp{
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
   }
 }
 .top-image {

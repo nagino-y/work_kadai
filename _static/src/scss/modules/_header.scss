@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import './breakpoint';
 
+// ヘッダー全体のクラス
 header {
   background-color: rgba(23, 118, 210, 0.6);
   height: 8rem;
@@ -49,6 +50,7 @@ header {
     flex-direction: row-reverse;
   }
 }
+// 特定のクラス
 .header {
   &__menu {
     height: 5.7rem;
