@@ -388,3 +388,72 @@
   }
 }
 
+// メリットページ
+.merit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 11.9rem 0 11.9rem 0;
+  @include sp{
+    max-width: 37.5rem;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 6.3rem 1.5rem 5.6rem 1.5rem;
+  }
+  &__sp {
+    display: none;
+    @include sp{
+      display: block;
+      background: linear-gradient(transparent 60%, rgba(252, 143, 0, 0.35) 0);
+      margin-left: 2.2rem;
+      padding-bottom: 0.3rem;
+      font-size: 2.1rem;
+      font-weight: normal;
+    }
+    &:nth-of-type(2) {
+      @include sp{
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &__pc {
+    font-size: 5.6rem;
+    font-weight: normal;
+    background: linear-gradient(transparent 60%, rgba(252, 143, 0, 0.35) 0);
+    margin: 0;
+    @include sp{
+      display: none;
+    }
+  }
+  & .merit-wrapper:nth-of-type(2) {
+    margin-top: 4.8rem;
+  }
+  & .merit-wrapper:nth-of-type(3) {
+    margin-top: 5.8rem;
+  }
+}
+.merit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 99.2rem;
+  margin-top: 7.4rem;
+  img {
+    width: 34.5rem;
+    height: 17.5rem;
+  }
+  &__text {
+    width: 55.6rem;
+    h2 {
+      font-size: 2.4rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    p {
+      width: 55.6rem;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+    }
+  }
+}
