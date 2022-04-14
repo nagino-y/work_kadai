@@ -1103,20 +1103,51 @@ body {
   width: 99.2rem;
   margin-top: 7.4rem;
 }
+@media screen and (max-width: 600px) {
+  .merit-wrapper {
+    display: block;
+    width: 34.5rem;
+    margin-top: 6.3rem;
+  }
+}
 .merit-wrapper img {
   width: 34.5rem;
   height: 17.5rem;
 }
 .merit-wrapper__text {
-  width: 55.6rem;
+  width: 55.5rem;
+}
+@media screen and (max-width: 600px) {
+  .merit-wrapper__text {
+    width: 34.5rem;
+  }
 }
 .merit-wrapper__text h2 {
   font-size: 2.4rem;
   font-weight: normal;
   margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .merit-wrapper__text h2 {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+}
 .merit-wrapper__text p {
   width: 55.6rem;
   font-size: 1.6rem;
   line-height: 3.2rem;
+}
+@media screen and (max-width: 600px) {
+  .merit-wrapper__text p {
+    font-size: 0;
+    line-height: 2.8rem;
+    width: 34.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 3.5rem;
+  }
+  .merit-wrapper__text p:before {
+    content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト";
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

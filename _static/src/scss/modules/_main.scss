@@ -439,21 +439,44 @@
   justify-content: space-between;
   width: 99.2rem;
   margin-top: 7.4rem;
+  @include sp{
+    display: block;
+    width: 34.5rem;
+    margin-top: 6.3rem;
+  }
   img {
     width: 34.5rem;
     height: 17.5rem;
   }
   &__text {
-    width: 55.6rem;
+    width: 55.5rem;
+    @include sp{
+      width: 34.5rem;
+    }
     h2 {
       font-size: 2.4rem;
       font-weight: normal;
       margin: 0;
+      @include sp{
+        font-size: 2.1rem;
+        margin: 0;
+      }
     }
     p {
       width: 55.6rem;
       font-size: 1.6rem;
       line-height: 3.2rem;
+      @include sp{
+        font-size: 0;
+        line-height: 2.8rem;
+        width: 34.5rem;
+        margin-top: 1.8rem;
+        margin-bottom: 3.5rem;
+        &:before {
+          content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト";
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 }
