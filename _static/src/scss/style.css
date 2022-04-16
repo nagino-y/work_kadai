@@ -1174,12 +1174,23 @@ body {
   font-weight: normal;
   margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .plan-section h1 {
+    font-size: 2.8rem;
+    width: 34.5rem;
+  }
+}
 .plan-section h1:before {
   content: "";
   height: 0.1rem;
   flex-grow: 1;
   background-color: rgb(112, 112, 112);
   margin-right: 4.8rem;
+}
+@media screen and (max-width: 600px) {
+  .plan-section h1:before {
+    margin-right: 3.4rem;
+  }
 }
 .plan-section h1:after {
   content: "";
@@ -1188,12 +1199,24 @@ body {
   background-color: rgb(112, 112, 112);
   margin-left: 4.8rem;
 }
+@media screen and (max-width: 600px) {
+  .plan-section h1:after {
+    margin-left: 3.4rem;
+  }
+}
 
 .plan-wrapper {
   display: flex;
   justify-content: space-around;
   width: 120rem;
   margin-top: 6.8rem;
+}
+@media screen and (max-width: 600px) {
+  .plan-wrapper {
+    flex-direction: column;
+    width: 34.5rem;
+    margin-top: 0;
+  }
 }
 
 .plan-inner {
@@ -1202,6 +1225,20 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.32);
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .plan-inner {
+    width: 100%;
+    height: 45rem;
+    padding: 3.3rem 0 2.9rem 0;
+    margin-top: 3.6rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px) {
+  .plan-inner:first-of-type {
+    margin-top: 6.8rem;
+  }
 }
 .plan-inner h2 {
   width: 18rem;
@@ -1212,12 +1249,33 @@ body {
   margin: 0 auto;
   margin-top: 4.1rem;
 }
+@media screen and (max-width: 600px) {
+  .plan-inner h2 {
+    font-size: 1.7rem;
+    width: 16rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+  }
+}
 .plan-inner p {
   width: 30.6rem;
   margin: 0 auto;
   margin-top: 3.2rem;
   font-size: 1.6rem;
   line-height: 3.2rem;
+}
+@media screen and (max-width: 600px) {
+  .plan-inner p {
+    font-size: 0;
+    line-height: 2.4rem;
+    width: 28.1rem;
+    margin-top: 1.4rem;
+    margin-bottom: 3.2rem;
+  }
+  .plan-inner p:before {
+    content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテ";
+    font-size: 1.4rem;
+  }
 }
 .plan-inner__list {
   width: 30.4rem;
@@ -1226,11 +1284,195 @@ body {
   margin-top: 3.6rem;
   padding: 0;
 }
+@media screen and (max-width: 600px) {
+  .plan-inner__list {
+    width: 28.1rem;
+    margin-top: 0;
+  }
+}
 .plan-inner__list--item {
   text-align: left;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 600px) {
+  .plan-inner__list--item {
+    font-size: 1.4rem;
+  }
+}
 .plan-inner__list hr {
   width: 30.4rem;
   margin: 1.7rem 0 1.9rem 0;
+}
+@media screen and (max-width: 600px) {
+  .plan-inner__list hr {
+    width: 28rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .plan-inner .sp-form-induction {
+    display: none;
+  }
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12.4rem 0 11.2rem 0;
+}
+@media screen and (max-width: 600px) {
+  .review-section {
+    padding: 6.4rem 1.5rem 5.6rem 1.5rem;
+  }
+}
+.review-section h1 {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: normal;
+  width: 83.3vw;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .review-section h1 {
+    font-size: 2.8rem;
+    width: 34.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+.review-section h1:before {
+  content: "";
+  height: 0.1rem;
+  margin-right: 4.8rem;
+  flex-grow: 1;
+  background-color: rgb(112, 112, 112);
+}
+@media screen and (max-width: 600px) {
+  .review-section h1:before {
+    margin-right: 3.4rem;
+  }
+}
+.review-section h1:after {
+  content: "";
+  height: 0.1rem;
+  margin-left: 4.8rem;
+  flex-grow: 1;
+  background-color: rgb(112, 112, 112);
+}
+@media screen and (max-width: 600px) {
+  .review-section h1:after {
+    margin-left: 3.4rem;
+  }
+}
+
+.review-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7.8rem;
+  width: 57rem;
+}
+@media screen and (max-width: 600px) {
+  .review-heading {
+    width: 33.2rem;
+    margin-top: 0;
+    margin-bottom: 3.6rem;
+  }
+}
+.review-heading p {
+  color: rgb(25, 118, 210);
+  font-size: 2rem;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .review-heading p {
+    font-size: 1.3rem;
+  }
+}
+.review-heading p:nth-of-type(1) {
+  background: linear-gradient(transparent 60%, rgba(252, 143, 0, 0.5) 0);
+}
+
+.review-wrapper {
+  width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+@media screen and (max-width: 600px) {
+  .review-wrapper {
+    display: block;
+    width: 32.1rem;
+    margin: 0;
+  }
+}
+
+.review-unit {
+  display: flex;
+  justify-content: center;
+  width: 47.6rem;
+  height: 28rem;
+  background-color: rgba(33, 150, 243, 0.18);
+  padding: 3.2rem 0 3.2rem 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .review-unit {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 32.1rem;
+    height: 30rem;
+    padding: 2.7rem 2.9rem 3rem 3rem;
+    box-sizing: border-box;
+  }
+}
+.review-unit__avatar p {
+  color: rgb(25, 118, 210);
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-top: 3.6rem;
+  text-align: center;
+}
+.review-unit__text {
+  width: 30.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 0;
+  margin-left: 2.6rem;
+}
+.review-unit__text--sp {
+  display: none;
+}
+.review-unit:nth-of-type(2) {
+  margin-left: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .review-unit:nth-of-type(2) {
+    margin: 0;
+  }
+}
+.review-unit:nth-of-type(3) {
+  margin-top: 3.2rem;
+}
+@media screen and (max-width: 600px) {
+  .review-unit:nth-of-type(3) {
+    margin: 0;
+  }
+}
+.review-unit:nth-of-type(4) {
+  margin-top: 3.2rem;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .review-unit:nth-of-type(4) {
+    margin: 0;
+  }
+}
+
+.sp-review-wrapper {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
