@@ -1217,18 +1217,6 @@ body {
   width: 120rem;
   margin-top: 6.8rem;
 }
-@media screen and (max-width: 770px) {
-  .plan-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 601px) {
-  .plan-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media screen and (max-width: 600px) {
   .plan-wrapper {
     flex-direction: column;
@@ -1244,20 +1232,6 @@ body {
   box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.32);
   text-align: center;
 }
-@media screen and (min-width: 601px) {
-  .plan-inner {
-    height: 57rem;
-    width: 45rem;
-    margin-top: 3rem;
-  }
-}
-@media screen and (max-width: 770px) {
-  .plan-inner {
-    height: 57rem;
-    width: 45rem;
-    margin-top: 3rem;
-  }
-}
 @media screen and (max-width: 600px) {
   .plan-inner {
     width: 100%;
@@ -1266,18 +1240,6 @@ body {
     margin-top: 3.6rem;
     box-sizing: border-box;
   }
-}
-@media screen and (min-width: 601px) {
-  .plan-inner:first-of-type {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 770px) {
-  .plan-inner:first-of-type {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 600px) {
   .plan-inner:first-of-type {
     margin-top: 6.8rem;
   }
@@ -1306,18 +1268,6 @@ body {
   font-size: 1.6rem;
   line-height: 3.2rem;
 }
-@media screen and (max-width: 770px) {
-  .plan-inner p {
-    width: 41rem;
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 601px) {
-  .plan-inner p {
-    width: 41rem;
-    font-size: 10px;
-  }
-}
 @media screen and (max-width: 600px) {
   .plan-inner p {
     font-size: 0;
@@ -1338,16 +1288,6 @@ body {
   margin-top: 3.6rem;
   padding: 0;
 }
-@media screen and (max-width: 770px) {
-  .plan-inner__list {
-    width: 37rem;
-  }
-}
-@media screen and (min-width: 601px) {
-  .plan-inner__list {
-    width: 37rem;
-  }
-}
 @media screen and (max-width: 600px) {
   .plan-inner__list {
     width: 28.1rem;
@@ -1367,36 +1307,11 @@ body {
   width: 30.4rem;
   margin: 1.7rem 0 1.9rem 0;
 }
-@media screen and (max-width: 770px) {
-  .plan-inner__list hr {
-    width: 37rem;
-  }
-}
-@media screen and (min-width: 601px) {
-  .plan-inner__list hr {
-    width: 37rem;
-  }
-}
 @media screen and (max-width: 600px) {
   .plan-inner__list hr {
     width: 28rem;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
-  }
-}
-@media screen and (max-width: 770px) {
-  .plan-inner__list--item {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 601px) {
-  .plan-inner__list--item {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .plan-inner .sp-form-induction {
-    display: none;
   }
 }
 

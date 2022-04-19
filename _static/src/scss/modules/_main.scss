@@ -486,6 +486,7 @@
 }
 
 // プランページ
+
 .plan-section {
   margin: 0 auto;
   background-color: rgba(33, 150, 243, 0.07);
@@ -509,24 +510,24 @@
       width: 34.5rem;
     }
     &:before {
-      @include sp{
-        margin-right: 3.4rem;
-      }
       content: "";
       height: 0.1rem;
       flex-grow: 1;
       background-color: rgba(112, 112, 112);
       margin-right: 4.8rem;
+      @include sp{
+        margin-right: 3.4rem;
+      }
     }
     &:after {
-      @include sp{
-        margin-left: 3.4rem;
-      }
       content: "";
       height: 0.1rem;
       flex-grow: 1;
       background-color: rgba(112, 112, 112);
       margin-left: 4.8rem;
+      @include sp{
+        margin-left: 3.4rem;
+      }
     }
   }
 }
@@ -535,15 +536,6 @@
   justify-content: space-around;
   width: 120rem;
   margin-top: 6.8rem;
-
-  @include tab{
-    flex-direction: column;
-    align-items: center;
-  }
-  @include sp-min{
-    flex-direction: column;
-    align-items: center;
-  }
   @include sp{
     flex-direction: column;
     width: 34.5rem;
@@ -556,31 +548,13 @@
   background-color: rgba(255, 255, 255);
   box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.32);
   text-align: center;
-  @include sp-min{
-    height: 57rem;
-    width: 45rem;
-    margin-top: 3rem;
-  }
-  @include tab{
-    height: 57rem;
-    width: 45rem;
-    margin-top: 3rem;
-  }
   @include sp{
     width: 100%;
     height: 45rem;
     padding: 3.3rem 0 2.9rem 0;
     margin-top: 3.6rem;
     box-sizing: border-box;
-  }
-  &:first-of-type {
-    @include sp-min{
-      margin-top: 0;
-    }
-    @include tab{
-      margin-top: 0;
-    }
-    @include sp{
+    &:first-of-type {
       margin-top: 6.8rem;
     }
   }
@@ -605,14 +579,6 @@
     margin-top: 3.2rem;
     font-size: 1.6rem;
     line-height: 3.2rem;
-    @include tab{
-      width: 41rem;
-      font-size: 10px;
-    }
-    @include sp-min{
-      width: 41rem;
-      font-size: 10px;
-    }
     @include sp{
       font-size: 0;
       line-height: 2.4rem;
@@ -631,12 +597,6 @@
     margin: 0 auto;
     margin-top: 3.6rem;
     padding: 0;
-    @include tab{
-      width: 37rem;
-    }
-    @include sp-min{
-      width: 37rem;
-    }
     @include sp{
       width: 28.1rem;
       margin-top: 0;
@@ -651,33 +611,208 @@
     hr {
       width: 30.4rem;
       margin: 1.7rem 0 1.9rem 0;
-      @include tab{
-        width: 37rem;
-      }
-      @include sp-min{
-        width: 37rem;
-      }
       @include sp{
         width: 28rem;
         margin-top: 1.6rem;
         margin-bottom: 1.6rem;
       }
     }
-    &--item {
-      @include tab{
-        font-size: 10px;
-      }
-      @include sp-min{
-        font-size: 10px;
-      }
-    }
-  }
-  .sp-form-induction {
-    @include sp{
-      display: none;
-    }
   }
 }
+
+// // プランページ
+// .plan-section {
+//   margin: 0 auto;
+//   background-color: rgba(33, 150, 243, 0.07);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 12.4rem 0 11.2rem 0;
+//   @include sp{
+//     padding: 6.4rem 1.5rem 5.6rem 1.5rem;
+//   }
+//   h1 {
+//     width: 83.3vw;
+//     display: flex;
+//     align-items: center;
+//     font-size: 4rem;
+//     font-weight: normal;
+//     margin: 0;
+//     @include sp{
+//       font-size: 2.8rem;
+//       width: 34.5rem;
+//     }
+//     &:before {
+//       @include sp{
+//         margin-right: 3.4rem;
+//       }
+//       content: "";
+//       height: 0.1rem;
+//       flex-grow: 1;
+//       background-color: rgba(112, 112, 112);
+//       margin-right: 4.8rem;
+//     }
+//     &:after {
+//       @include sp{
+//         margin-left: 3.4rem;
+//       }
+//       content: "";
+//       height: 0.1rem;
+//       flex-grow: 1;
+//       background-color: rgba(112, 112, 112);
+//       margin-left: 4.8rem;
+//     }
+//   }
+// }
+// .plan-wrapper {
+//   display: flex;
+//   justify-content: space-around;
+//   width: 120rem;
+//   margin-top: 6.8rem;
+
+//   @include tab{
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   @include sp-min{
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   @include sp{
+//     flex-direction: column;
+//     width: 34.5rem;
+//     margin-top: 0;
+//   }
+// }
+// .plan-inner {
+//   width: 37rem;
+//   height: 51.3rem;
+//   background-color: rgba(255, 255, 255);
+//   box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.32);
+//   text-align: center;
+//   @include sp-min{
+//     height: 57rem;
+//     width: 45rem;
+//     margin-top: 3rem;
+//   }
+//   @include tab{
+//     height: 57rem;
+//     width: 45rem;
+//     margin-top: 3rem;
+//   }
+//   @include sp{
+//     width: 100%;
+//     height: 45rem;
+//     padding: 3.3rem 0 2.9rem 0;
+//     margin-top: 3.6rem;
+//     box-sizing: border-box;
+//   }
+//   &:first-of-type {
+//     @include sp-min{
+//       margin-top: 0;
+//     }
+//     @include tab{
+//       margin-top: 0;
+//     }
+//     @include sp{
+//       margin-top: 6.8rem;
+//     }
+//   }
+//   h2 {
+//     width: 18rem;
+//     text-align: center;
+//     font-size: 2rem;
+//     font-weight: normal;
+//     background: linear-gradient(transparent 40%, rgba(33, 150, 243, 0.5) 0);
+//     margin: 0 auto;
+//     margin-top: 4.1rem;
+//     @include sp{
+//       font-size: 1.7rem;
+//       width: 16rem;
+//       margin-top: 0;
+//       padding-bottom: 0.5rem;
+//     }
+//   }
+//   p {
+//     width: 30.6rem;
+//     margin: 0 auto;
+//     margin-top: 3.2rem;
+//     font-size: 1.6rem;
+//     line-height: 3.2rem;
+//     @include tab{
+//       width: 41rem;
+//       font-size: 10px;
+//     }
+//     @include sp-min{
+//       width: 41rem;
+//       font-size: 10px;
+//     }
+//     @include sp{
+//       font-size: 0;
+//       line-height: 2.4rem;
+//       width: 28.1rem;
+//       margin-top: 1.4rem;
+//       margin-bottom: 3.2rem;
+//       &:before {
+//         content: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテ";
+//         font-size: 1.4rem;
+//       }
+//     }
+//   }
+//   &__list {
+//     width: 30.4rem;
+//     list-style: none;
+//     margin: 0 auto;
+//     margin-top: 3.6rem;
+//     padding: 0;
+//     @include tab{
+//       width: 37rem;
+//     }
+//     @include sp-min{
+//       width: 37rem;
+//     }
+//     @include sp{
+//       width: 28.1rem;
+//       margin-top: 0;
+//     }
+//     &--item {
+//       text-align: left;
+//       font-size: 1.6rem;
+//       @include sp{
+//         font-size: 1.4rem;
+//       }
+//     }
+//     hr {
+//       width: 30.4rem;
+//       margin: 1.7rem 0 1.9rem 0;
+//       @include tab{
+//         width: 37rem;
+//       }
+//       @include sp-min{
+//         width: 37rem;
+//       }
+//       @include sp{
+//         width: 28rem;
+//         margin-top: 1.6rem;
+//         margin-bottom: 1.6rem;
+//       }
+//     }
+//     &--item {
+//       @include tab{
+//         font-size: 10px;
+//       }
+//       @include sp-min{
+//         font-size: 10px;
+//       }
+//     }
+//   }
+//   .sp-form-induction {
+//     @include sp{
+//       display: none;
+//     }
+//   }
+// }
 
 // レビューページ
 .review-section {
